@@ -410,20 +410,45 @@
           <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
           <form name="customer-data">
             <label for="user-name" class="modal-input-label">Ім'я</label>
-            <div>
+            <div class="modal-input-wrapper">
               <input type="text" id="user-name" name="Name" class="modal-input" />
+              <svg class="input-icon" width="18px" height="18px">
+                <use href="/images/SVG/icons.svg#icon-person"></use>
+              </svg>
             </div>
+
             <label for="user-phone" class="modal-input-label">Телефон</label>
-            <div>
-              <input type="text" id="user-phone" name="Phone" class="modal-input" />
+            <div class="modal-input-wrapper">
+              <input type="tel" id="user-phone" name="Phone" class="modal-input" />
+              <svg class="input-icon" width="18px" height="18px">
+                <use href="/images/SVG/icons.svg#icon-pick-up-phone"></use>
+              </svg>
             </div>
+
             <label for="user-email" class="modal-input-label">Пошта</label>
-            <div>
-              <input type="text" id="user-email" name="Email" class="modal-input" />
+            <div class="modal-input-wrapper">
+              <input type="email" id="user-email" name="Email" class="modal-input" />
+              <svg class="input-icon" width="18px" height="18px">
+                <use href="/images/SVG/icons.svg#icon-input-email"></use>
+              </svg>
             </div>
+
             <label for="user-comment" class="modal-input-label">Коментар</label>
-            <div>
-              <input type="text" id="user-comment" name="Comment" class="modal-input" />
+            <textarea
+              name="comment"
+              id="user-comment"
+              placeholder="Введіть текст"
+              class="modal-comment"
+            ></textarea>
+
+            <div class="modal-terms-agreement">
+              <div class="modal-terms-wrapper">
+                <input type="checkbox" id="terms-checkbox" />
+              </div>
+              <label for="terms-checkbox" class="modal-terms"
+                >Погоджуюся з розсилкою та приймаю
+                <a href="#" class="terms-link">Умови договору</a></label
+              >
             </div>
           </form>
         </div>
