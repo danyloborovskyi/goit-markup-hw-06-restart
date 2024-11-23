@@ -213,7 +213,8 @@ header {
     transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #188CE8;
     cursor: pointer;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
@@ -682,6 +683,7 @@ footer .logo-link {
     outline: none;
     font-size: 16px;
     line-height: 16px;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-input:focus,
@@ -704,6 +706,7 @@ footer .logo-link {
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-comment {
@@ -717,6 +720,7 @@ footer .logo-link {
     border-radius: 4px;
     margin-bottom: 20px;
     outline: none;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-comment:focus {
@@ -772,4 +776,27 @@ footer .logo-link {
 .terms-link {
     text-decoration: underline;
     color: var(--secondary-color);
+}
+
+.modal-button-send {
+    display: inline-block;
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    color: white;
+    background-color: var(--secondary-color);
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    margin-left: 124px;
+    margin-top: 30px;
+}
+
+.modal-button-send:hover,
+.modal-button-send:focus {
+    background-color: #188CE8;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
