@@ -680,6 +680,8 @@ footer .logo-link {
     border: 1px solid rgba(33, 33, 33, 0.2);
     width: 100%;
     outline: none;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .modal-input:focus,
@@ -714,23 +716,52 @@ footer .logo-link {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-bottom: 20px;
+    outline: none;
+}
+
+.modal-comment:focus {
+    border-color: var(--secondary-color);
 }
 
 .modal-terms-agreement {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.modal-terms-wrapper {
-    display: inline-block;
+.modal-terms-checkbox {
+    appearance: none;
 }
 
 .modal-terms {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-left: 8px;
+    position: relative;
+    padding-left: 36px;
+}
+
+.modal-terms::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 15px;
+    border: 1px solid var(--main-color);
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: visible;
+}
+
+.modal-terms::after {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 15px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: visible;
+    background-image: url(/images/SVG/icons.svg#icon-check);
 }
 
 .terms-link {
