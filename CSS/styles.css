@@ -210,14 +210,14 @@ header {
     letter-spacing: 0.06em;
     padding: 10px 24px;
     border-radius: 4px;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .hero-button:hover,
 .hero-button:focus {
     background-color: #188CE8;
     cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section.our-benefits {
@@ -491,7 +491,7 @@ footer .logo-link {
     align-items: center;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
     
 .footer-social-media-icon {
@@ -502,6 +502,68 @@ footer .logo-link {
 .footer-social-media-link:focus {
     background-color: var(--secondary-color);
     cursor: pointer;
+}
+
+.footer-subscription {
+    padding-top: 12px;
+    margin-left: 93px;
+}
+
+.subscription-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.172;
+    color: #FFFFFF;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.subscription-form {
+    display: flex;
+}
+
+.subscription-input {
+    background-color: transparent;
+    height: 50px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: white;
+    outline: none;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    margin-right: 12px;
+    padding: 15px 16px;
+}
+
+.subscription-input:focus {
+    border-color: var(--secondary-color);
+}
+
+.button-subscribe {
+    width: 200px;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 700;
+    color: white;
+    background-color: var(--secondary-color);
+    letter-spacing: 0.06em;
+    padding: 10px 24px;
+    border-radius: 4px;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+    background-color: #188CE8;
+    cursor: pointer;
+}
+
+.icon-telegram {
+    margin-left: 10px;
 }
 
 .portfolio-headline {
@@ -635,6 +697,7 @@ footer .logo-link {
     height: 581px;
     background-color: #FFFFFF;
     padding: 40px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .modal-button-close {
@@ -789,14 +852,14 @@ footer .logo-link {
     letter-spacing: 0.06em;
     padding: 10px 24px;
     border-radius: 4px;
-    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, box-shadow cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     margin-left: 124px;
     margin-top: 30px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-button-send:hover,
 .modal-button-send:focus {
     background-color: #188CE8;
     cursor: pointer;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
